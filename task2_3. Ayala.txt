@@ -1,0 +1,77 @@
+"""
+#task 2.1
+
+a = 3
+b = 5
+
+a = a + b 
+b = a - b 
+a = a - b
+
+print('a =', a)
+print('b =', b)
+"""
+
+"""
+#task 2.2
+def long_burp(count):
+     print("Bu" + 'r' * count + 'p')
+long_burp(3)
+long_burp(5)
+long_burp(9)
+"""
+
+"""
+#task 2.3
+def vowel(word):
+  vowels = 'aeiouAEIOU'
+  for vowel in vowels:
+    word = word.replace(vowel, '*')
+  return word
+    
+print(vowel('Celebration'))
+print(vowel('Palm'))
+print(vowel('Prediction'))
+"""
+
+"""
+#task 3.1
+def say_hello_bye(text, num):
+     if num == 1:
+         print(f'- Hello, {text}!')
+     elif num == 0:
+         print(f'- Bye, {text}!')
+say_hello_bye('Ayala', 1)
+say_hello_bye('Aya', 0)
+say_hello_bye('Alma', 0)
+"""
+
+"""
+#task 3.1.1 - ne ponyala 
+def coded_string(text):
+     for x in range(0, len(text)):
+         if(text[x] == 'a'):
+             text[x].replace('o', '0')
+         elif(text[x] == 'a'):
+             text[x].replace('u', '1')
+         elif(text[x] == 'a'):
+             text[x].replace('e', '3')
+         elif(text[x] == 'a'):
+             text[x].replace('a', '4')
+         elif(text[x] == 'a'):
+             text[x].replace('s', '5')
+     text = text.strip()
+     print(text)
+
+coded_string('programming is fun')
+coded_string('become a coder')
+"""
+
+"""
+#task 3.2
+def equal(a, b, c):
+    return 3 - len({a, b, c}) + (len({a, b, c}) != 3)
+print(equal(3, 4, 3))
+print(equal(1, 1, 1))
+print(equal(3, 4, 1))
+"""
