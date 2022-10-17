@@ -1,0 +1,24 @@
+hr
+#task1
+min = int(input("How much minutes: "))
+sec = 60
+convert = min * sec
+print("convert", "(", min, ") ->", convert)
+
+#task2
+def say_hello(name):
+    print(f"Hello {name}")
+say_hello(input("Name: "))
+
+#task3
+exp = lambda a, b: a**b
+a = int(input("a: "))
+b = int(input("b: "))
+print("calculate_exponent(", a,",", b,") ->", exp(a,b))
+
+#task4
+sum = lambda a, b, c: a+b+c
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+print("get_sum_of_elements (", a, ",", b, ",", c, ") ->", sum(a,b,c))
